@@ -9,8 +9,8 @@ title:  Team
 ## Chongming Wang
 ***UCI Net ID***: chongmiw
 
-## USER 2
-***UCI Net ID***: ucinetid
+## Zeyang Li
+***UCI Net ID***: zeyangl
 
-## USER 3
-***UCI Net ID***: ucinetid
+## Yifan Zhang
+***UCI Net ID***: yifaz10
