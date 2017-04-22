@@ -10,6 +10,7 @@ Application could be to locate NPC or find quest destination in MMORPG games.
 
 ## 2.3 AI/ML Algorithms (10 points) 
 AI:Using Dijkstra Algorithm to find routes. 
+
 ML:Learning the routine of where these objects might be (i.e. chicken tends to be in pond)
 
 ## 2.4 Evaluation Plan (30 points) 
