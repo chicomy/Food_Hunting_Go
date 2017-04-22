@@ -6,7 +6,7 @@ title:  Proposal
 ## 2.2 Summary of the Project (30 points)
 The main idea of this project is to build an AI that can find a target object, (i.e. a certain block) and the fastest way to travel back to the original position. The input will be the whole MC world, and the name of an object, i.e. chicken, Redstone and such. It will return if the agent is able to find the object and the fastest route if it does find something. The fastest route does not mean the same as the shortest route. Walking in water and jumping up a block may delay the speed of traveling, so the fastest route can be different from shortest. 
 
-Application could be to locate NPC or find quest destination in MMORPG games.
+Application could be to locate NPC or find quest place in MMORPG games.
 
 ## 2.3 AI/ML Algorithms (10 points) 
 AI:Using Dijkstra Algorithm to find routes. 
