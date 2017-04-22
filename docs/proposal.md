@@ -14,7 +14,5 @@ AI:Using Dijkstra Algorithm to find routes.
 ML:Learning the routine of where these objects might be (i.e. chicken tends to be in pond)
 
 ## 2.4 Evaluation Plan (30 points) 
-As described in class, mention how you will evaluate the success of your project. 
-In a paragraph, focus on the quantitative evaluation: what are the metrics, what are the baselines, how much you expect your approach to improve the metric by, what data will you evaluate on, etc. 
-
 To verify the algorithm, first we can randomly assign objects that exist to test if the agent can find those. Next, we can compare it to the shortest path to see which one takes less time. It is interesting to see an AI searching around an open map and return with information it observes along the way. We want it to be more sensible later, for example, to know that there are likely to have trees on grass rather than sand. In other word, it will choose which part of the map may contain the target object to begin search with. 
+ultimate goal: user prompt a number of blocks or CEs to be gathered, the agent find them all in the MC world quick and fast
