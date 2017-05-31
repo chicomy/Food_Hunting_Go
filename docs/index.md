@@ -13,4 +13,4 @@ The agent will firstly avoid lava. However, after exploring the whole map, if th
 The agent will dump things that it does not need once in a while.
 
 <a href="https://github.com/chicomy/CS_175_malmo_project/blob/master/docs/project2.py">Link to Project Source Code</a>
-
+<a href="https://youtu.be/lLSKd205U9M">Link to Youtube Video</a>
