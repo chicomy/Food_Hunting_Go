@@ -1,4 +1,4 @@
-# CS_175 Food Hunting Go!
+# CS 175 Food Hunting Go!
 UCI CS 175 Machine Learning Project in MineCraft
 - Authors: Chongming Wang, Zeyang Li, Yifan Zhang
 
