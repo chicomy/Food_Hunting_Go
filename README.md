@@ -1,4 +1,4 @@
-# CS_175 Midori Hat Search System
+# CS_175 Food Hunting Go!
 UCI CS 175 Machine Learning Project in MineCraft
 - Authors: Chongming Wang, Zeyang Li, Yifan Zhang
 
