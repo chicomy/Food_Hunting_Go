@@ -12,8 +12,5 @@ The agent will firstly avoid lava. However, after exploring the whole map, if th
 
 The agent will dump things that it does not need once in a while.
 
-The agent search the map via depth-frist.eference (Cheat Sheet)][quickref].
-
 <a href="https://github.com/chicomy/CS_175_malmo_project/blob/master/docs/project2.py">Link to Project Source Code</a>
 
-[quickref]: https://github.com/mundimark/quickrefs/blob/master/HTML.md
