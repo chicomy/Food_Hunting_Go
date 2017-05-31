@@ -3,6 +3,8 @@ layout: default
 title: Status
 ---
 <a href="https://youtu.be/lLSKd205U9M">Link to Youtube Video</a>
+
+
 Project: Food Hunting Go!
 Team members: Zeyang Li, Yifan Zhang, Chongming Wang 
 Project Summary: 
