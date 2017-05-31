@@ -2,33 +2,17 @@
 layout: default
 title:  Home
 ---
+UCI CS 175 Machine Learning Project in MineCraft
 
-_Add your text here_
+Authors: Chongming Wang, Zeyang Li, Yifan Zhang
 
+In this project, we designed an agent that can search for given objects in an open map, and craft objects based on recipe after retrieving those materials.
 
-What's Markdown (`.md`)?
+The agent will firstly avoid lava. However, after exploring the whole map, if the agent has not found everything it is asked to, it will use water to pave a path through lava to keep looking.
 
-Markdown is markup that lets you write hypertext (HTML) documents
-in easy-to-read and easy-to-write plain text.
-No angle brackets `<></>` required for
-paragraphs, lists, blockquotes, tables, etc.
+The agent will dump things that it does not need once in a while.
 
-
-This is a paragraph (in Markdown). Some more
-text here.
-
-This is another paragraph.
-
-This is a list:
-
-- Orange
-- Apple
-- Blueberry
-
-
-
-Just getting started with Markdown?
-See the [HTML <-> Markdown Quick Reference (Cheat Sheet)][quickref].
+The agent search the map via depth-frist.eference (Cheat Sheet)][quickref].
 
 
 [quickref]: https://github.com/mundimark/quickrefs/blob/master/HTML.md
