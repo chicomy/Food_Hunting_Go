@@ -14,6 +14,8 @@ We complete the searching algorithm and map generator. The agent now can discove
 Approach: 
 
 For the searching part, we use depth-first search. With a stack of actions recording the last action, the agent can correctly trace back to the last state if it runs into a dead end. If it meets a dead end, the agent will break the loop, pop this current action off the stack, and push back in a new direction/action. On the other hand, the agent itself has a list of lists of 1’s and 0’s as it travels through the map. 1 and 0 are for accessibility of a block, and the coordinates of that block are the relative position in this list, for example, L[0][4] stands for the (1, 5) on map. 
+<img src="https://github.com/chicomy/CS_175_malmo_project/blob/master/docs/Photos/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20170530203615.png" alt="Overview">
+
 
 The agent will auto-collect objects from 9 blocks around it. After exploring the map, the agent will come back to the pot. If the agent does not have enough material, one of the possible states is that the objects are surrounded by lava. If so, the agent will carry a bucket with water to pave a path off lava to discover places it had not visited. 
 For the training map, the agent searches via depth-first search. It will check if that block is visited or available. The agent will only take blocks that are un-visited and not causing death, such as lava and air. When the agent is traveling through the map, it collects objects and records on which blocks they are found. Therefore, it will have a dictionary that looks like {(“apple”, “grass”): 64, (“apple”, “sandstone”): 34, (“apple”, “glass”): 2}. The values mean how many times such object is found on this block, so we can conclude the chance to find apples on grass is 64/(64+34+2) = 64%, 24% on sandstone, and 2% on glass. In a test map, we will have a ranking system to evaluate every block of the map. Those blocks are rated based on three elements: how many objects and how often those objects can be found on this kind of terrain, and distance towards agent. For example, with same distance, grass will have higher rank than the other two. However, if there is a banana with {(“banana”, “diamond”): 40, (“banana”, “sandstone”): 30, (“banana”, “diamond”): 10}, and the agent will consider to visit sandstone first because two objects are likely to be found on sandstone instead of visiting grass for apple and diamond for banana. 
@@ -21,7 +23,8 @@ For the training map, the agent searches via depth-first search. It will check i
 We hope to apply this method on a larger scale with 3D obstacles, so the agent really has to think about its path. 
 
 Evaluation: 
-	
+<img src="https://github.com/chicomy/CS_175_malmo_project/blob/master/docs/Photos/Ranking.png" alt="Ranking Algo">
+
 The agent takes the training result and optimizes a better way of retrieving those objects on the new map.  
 The agent will rank terrain with probability from the dictionary. In other word, it will go to the closest block with highest probability. In the demo, the task to make a pumpkin pie, which is made of a pumpkin, sugar, and an egg. 
 Therefore, the agent will first find a pumpkin on Sandstone. Since it is currently on Sandstone, it will begin a DFS in this area. Then it will look for egg on Diamond, which is on the East side of its current position. Sugar is on Glass, and the closest glass is on South. Hence, it will go south for the last piece to craft a pumpkin pie.
