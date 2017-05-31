@@ -2,6 +2,7 @@
 UCI CS 175 Machine Learning Project in MineCraft
 - Authors: Chongming Wang, Zeyang Li, Yifan Zhang
 
+<a href="CS_175_food_hunting_go/docs/index.md">Index Page</a>
 - We complete the searching algorithm and map generator. The agent now can discover and retrieve objects on any given map without dying. Moreover, the agent is capable of identifying and relating objects with the landscape. Therefore, on any new maps, the agent will look for places with the highest probability, and searching in a fastest route.
 - The agent will firstly avoid lava. However, after exploring the whole map, if the agent has not found everything it is asked to, 
   it will use water to pave a path through lava to keep looking. 
