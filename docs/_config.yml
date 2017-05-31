@@ -10,5 +10,5 @@ subtitle: 'Malmo Project of Machine Learning '
 markdown: kramdown
 
 exclude:
-- README.md
+- index.md
 - LICENSE.md
