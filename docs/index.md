@@ -22,4 +22,5 @@ The agent will dump things that it does not need once in a while.
 
 
 <a href="https://github.com/chicomy/CS_175_food_hunting_go">Link to Project Homepage</a>
+
 <a href="https://github.com/chicomy/CS_175_malmo_project/blob/master/docs/project2.py">Link to Project Source Code</a>
