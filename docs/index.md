@@ -7,7 +7,9 @@ Machine Learning Project in MineCraft
 Authors: Chongming Wang, Zeyang Li, Yifan Zhang
 
 <a href="https://github.com/chicomy/CS_175_malmo_project/blob/master/docs/project2.py">Link to Project Source Code</a>
-[![Watch the video](https://youtu.be/lLSKd205U9M)
+[!Youtube](https://youtu.be/lLSKd205U9M)
+
+
 <a href="https://youtu.be/lLSKd205U9M">Link to Youtube Video</a>
 
 <a href="https://github.com/chicomy/CS_175_malmo_project/blob/master/PPT.pptx">A Powerpoint file to explain the video</a>
