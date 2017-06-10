@@ -7,7 +7,7 @@ Machine Learning Project in MineCraft
 Authors: Chongming Wang, Zeyang Li, Yifan Zhang
 
 <a href="https://github.com/chicomy/CS_175_malmo_project/blob/master/docs/project2.py">Link to Project Source Code</a>
-[![Youtube!](https://youtu.be/lLSKd205U9M)
+[!Youtube](https://youtu.be/lLSKd205U9M)
 
 
 <a href="https://youtu.be/lLSKd205U9M">Link to Youtube Video</a>
@@ -20,7 +20,7 @@ In this project, we designed an agent that can search for given objects in an op
 The agent will firstly avoid lava. However, after exploring the whole map, if the agent has not found everything it is asked to, it will use water to pave a path through lava to keep looking.
 <img src="Overview.png" alt="Overview">
 The agent will dump things that it does not need once in a while.
-<img src="https://github.com/chicomy/CS_175_food_hunting_go/blob/master/docs/Photos/Ranking.png" alt="Ranking Algo">
+[!ranking](/Ranking.png)
 
 <img src="docs/Photos/pumpkinpie.jpg" alt="PumpkinPieFound">
 
