@@ -18,7 +18,7 @@ In this project, we designed an agent that can search for given objects in an op
 The agent will firstly avoid lava. However, after exploring the whole map, if the agent has not found everything it is asked to, it will use water to pave a path through lava to keep looking.
 <img src="docs/Photos/Ranking.png" alt="Overview">
 The agent will dump things that it does not need once in a while.
-<img src="/docs/Photos/Ranking.png" alt="Ranking Algo">
+<img src="https://github.com/chicomy/CS_175_food_hunting_go/blob/master/docs/Photos/Ranking.png" alt="Ranking Algo">
 
 <img src="docs/Photos/pumpkinpie.jpg" alt="PumpkinPieFound">
 
