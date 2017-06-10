@@ -6,9 +6,6 @@ Machine Learning Project in MineCraft
 
 Authors: Chongming Wang, Zeyang Li, Yifan Zhang
 
-<a href="https://github.com/chicomy/CS_175_malmo_project/blob/master/docs/project2.py">Link to Project Source Code</a>
-
-
 [![watch!](https://img.youtube.com/vi/lLSKd205U9M/0.jpg)](https://www.youtube.com/watch?v=lLSKd205U9M)
 
 
@@ -23,3 +20,5 @@ The agent will dump things that it does not need once in a while.
 
 <img src="Photos/pumpkinpie.jpg" alt="" style="width: 0.7;">
 
+
+<a href="https://github.com/chicomy/CS_175_malmo_project/blob/master/docs/project2.py">Link to Project Source Code</a>
