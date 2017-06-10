@@ -11,7 +11,7 @@ Authors: Chongming Wang, Zeyang Li, Yifan Zhang
 
 [![watch!](https://img.youtube.com/vi/lLSKd205U9M/0.jpg)](https://www.youtube.com/watch?v=lLSKd205U9M)
 
-<a href="https://github.com/chicomy/CS_175_malmo_project/blob/master/PPT.pptx">A Powerpoint file to explain the video</a>
+
 
 
 In this project, we designed an agent that can search for given objects in an open map, and craft objects based on recipe after retrieving those materials.
