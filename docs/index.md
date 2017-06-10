@@ -16,9 +16,9 @@ Authors: Chongming Wang, Zeyang Li, Yifan Zhang
 In this project, we designed an agent that can search for given objects in an open map, and craft objects based on recipe after retrieving those materials.
 
 The agent will firstly avoid lava. However, after exploring the whole map, if the agent has not found everything it is asked to, it will use water to pave a path through lava to keep looking.
-<img src="CS_175_food_hunting_go/docs/Photos/Ranking.png" alt="Overview">
+<img src="/CS_175_food_hunting_go/docs/Photos/Ranking.png" alt="Overview">
 The agent will dump things that it does not need once in a while.
 <img src="/docs/Photos/Ranking.png" alt="Ranking Algo">
 
-<img src="CS_175_food_hunting_go/docs/Photos/pumpkinpie.jpg" alt="Finished">
+<img src="/CS_175_food_hunting_go/docs/Photos/pumpkinpie.jpg" alt="PumpkinPieFound">
 
