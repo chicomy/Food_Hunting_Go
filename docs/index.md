@@ -2,7 +2,7 @@
 layout: default
 title:  Home
 ---
-UCI CS 175 Machine Learning Project in MineCraft
+175 Machine Learning Project in MineCraft
 
 Authors: Chongming Wang, Zeyang Li, Yifan Zhang
 
