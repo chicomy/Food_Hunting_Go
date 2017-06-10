@@ -2,7 +2,7 @@
 layout: default
 title:  Home
 ---
-175 Machine Learning Project in MineCraft
+Machine Learning Project in MineCraft
 
 Authors: Chongming Wang, Zeyang Li, Yifan Zhang
 
