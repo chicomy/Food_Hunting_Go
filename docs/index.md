@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  Home
+title:  Food Hunting Go!
 ---
 Machine Learning Project in MineCraft
 
