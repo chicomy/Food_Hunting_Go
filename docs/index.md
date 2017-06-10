@@ -20,7 +20,7 @@ In this project, we designed an agent that can search for given objects in an op
 The agent will firstly avoid lava. However, after exploring the whole map, if the agent has not found everything it is asked to, it will use water to pave a path through lava to keep looking.
 <img src="Overview.png" alt="Overview">
 The agent will dump things that it does not need once in a while.
-[!ranking(/Ranking.png)]
+[!ranking(/Ranking.png)](/Ranking.png)
 
-<img src="docs/Photos/pumpkinpie.jpg" alt="PumpkinPieFound">
+<img src="Photos/pumpkinpie.jpg" alt="" style="width: 400px;">
 
