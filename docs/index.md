@@ -6,21 +6,8 @@ Machine Learning Project in MineCraft
 
 Authors: Chongming Wang, Zeyang Li, Yifan Zhang
 
-<a href="https://github.com/chicomy/CS_175_malmo_project/blob/master/docs/project2.py">Link to Project Source Code</a>
-[![watch!](https://img.youtube.com/vi/lLSKd205U9M/0.jpg)](https://www.youtube.com/watch?v=lLSKd205U9M)
-
-
-<a href="https://youtu.be/lLSKd205U9M">Link to Youtube Video</a>
-
-<a href="https://github.com/chicomy/CS_175_malmo_project/blob/master/PPT.pptx">A Powerpoint file to explain the video</a>
-
-
-In this project, we designed an agent that can search for given objects in an open map, and craft objects based on recipe after retrieving those materials.
-
-The agent will firstly avoid lava. However, after exploring the whole map, if the agent has not found everything it is asked to, it will use water to pave a path through lava to keep looking.
-<img src="Photos/Overview.png" alt="overview" style="width: 80%;">
-The agent will dump things that it does not need once in a while.
-<img src="Photos/Ranking.png" alt="rank" style="width: 80%;">
+Our agent is designed to learn about corresponding relationship between terrain blocks and objects on it, and it will apply what it has learnt in a more complex map to find objects it is asked for. It is like an auto-robot for searching required objects in places that human cannot reach, such as deep forest or seafloor. It will optimize its path while it is searching. 
+On the right side is a training map, which is divided into four pieces with objects on it. Most objects are bind onto a certain type of block, but there are outliers just to confuse our agent. Expect some unexpected. 
 
 <img src="Photos/pumpkinpie.jpg" alt="" style="width: 80%;">
 
