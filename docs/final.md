@@ -36,10 +36,7 @@ The agent is using A-star search to evaluate four steps ahead of its current loc
 <img src="Photos/test_map.png" >
 </p>
 
-
 <h2>Evaluation</h2>
-
-
 <p>
 <h4>Raw Data</h4>
 We also write agents via different algorithm in order to compare with ours. 
