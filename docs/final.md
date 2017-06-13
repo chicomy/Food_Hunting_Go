@@ -10,14 +10,19 @@ title:  Final Report
 <p>
 <h3> Description </h3>
 Our agent is designed to learn about corresponding relationship between terrain blocks and objects on it, and it will apply what it has learnt in a more complex map to find objects it is asked for. It is like an auto-robot for searching required objects in places that human cannot reach, such as deep forest or seafloor. It will optimize its path while it is searching. 
-On the right side is a training map, which is divided into four pieces with objects on it. Most objects are bind onto a certain type of block, but there are outliers just to confuse our agent. Expect some unexpected. 
-Our agent traverses the training map via depth-first algorithm. It will learn that pumpkins are on sandstone; eggs are on diamond, and so on. 
+In such condition, sometimes it is hard to connect to the robot wirelessly or send commands in time. It will be more reasonable to let robot handle itself and report regularly. 
+
+Therefore, we will use what we have here to apply to future environment. We simulate this on a simple training map with objects on it. 
+Most objects are bind onto a certain type of block, but there are outliers just to confuse our agent. Expect some unexpected. 
+Then the agent will take what it has learnt and apply to the test map, which is more like a real-life situation. 
+
 </p>
 
 ## Approaches
 
 <p>
 <h4>Training Map:</h4>
+
 Here we use the recipe for pumpkin pie as an example. To craft a pumpkin pie, we need egg, sugar, and a pumpkin. On the training map, eggs are created on Diamond_block, apples on grass, sugar on glass, and pumpkins on sandstone. However, there are cookies and cooked fish as outliers on random position on the map. Out agent will traverse the training map to learn about this policy. As it learns, it will know to find apples on grass first and so as other relationships. It will bring what it has learnt to the test map. 
 Relative relationship: 
 "egg" on "diamond_block" 
