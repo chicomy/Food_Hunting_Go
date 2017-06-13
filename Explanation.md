@@ -9,7 +9,7 @@ Our agent traverses the training map via depth-first algorithm. It will learn th
 <h2>Training Map:</h2>
 Here we use the recipe for pumpkin pie as an example. To craft a pumpkin pie, we need egg, sugar, and a pumpkin. On the training map, eggs are created on Diamond_block, apples on grass, sugar on glass, and pumpkins on sandstone. However, there are cookies and cooked fish as outliers on random position on the map. Out agent will traverse the training map to learn about this policy. As it learns, it will know to find apples on grass first and so as other relationships. It will bring what it has learnt to the test map. 
 
-<img src="docs/Photos/training_map.png" alt="Training map" >
+<img src="docs/Photos/training_map.png" alt="Training map" style="width: 80%;" >
 </p>
 
 <p>
