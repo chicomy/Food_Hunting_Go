@@ -34,13 +34,13 @@ First is a random	agent that takes directions randomly. Here is a list of 10 att
 The maximum step is 521 and the minimum is 29. The average is 174.6 with a standard deviation of 165.72. SD is very large because this totally depends on luck. 
 </p>
 <p>
-DFS
+<h3>2DFS</h3>
 DFS is using depth-first search to traverse the map. Here is a list of 10 attemps that the agent finishes finding all three objects. 
 [42, 14, 68, 67, 16, 69, 82, 55, 70, 42, 69]
 The maximum step is 82 and the minimum is 14. The average is 54.0 with a standard deviation of 21.71. SD is reduced a lot and average is 1/3 of the random agent. 
 </p>
 <p>
-A* (Ours)
+<h3>A* (Ours)</h3>
 We implement A* search with our ranking system to dynamically decide which direction to take. 
 [12, 14, 6, 14, 24, 22, 26, 22, 20, 19]
 The maximum step is 26 and the minimum is 6. The average is 17.9 with a standard deviation of 5.906. 
