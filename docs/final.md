@@ -45,6 +45,7 @@ The agent is using A-star search to evaluate four steps ahead of its current loc
 
 <img src="Photos/test_map.png" style="width: 90%;">
 
+
 This is rather a extreme case. The agent will firstly look for everything but grass or obsidian, so it misses the sugar among three obsidian blocks on the left of the begining point. Thereafter, it goes left then all the way up because those blocks are more "promising". At where sugar is found, agent's path begins to avoid glass as well. At (6,4), the agent decides to pass glass rather than grass because visited is still a better path than not valuable. Finally, it reaches three sandtones, and finds pumpkin on one of them. 
 
 </p>
@@ -68,7 +69,7 @@ the formular of A-star search is this:
 
 Also, in order to prevent agent from falling down the sky, we give H(n) = 1000 when it find a near by node state to be 0 (i.e. "air") at depth 1. What's more, for the nodes that next to current node, we give then 2 times heuristic value since they are more important for agent to consider. Now we calculate each state's G(n) and H(n) value, and add them up, which is the F(n) of one direction. Then we find the direction with the lowest F(n) value, and go towards that direction. The image below is a detailed illustration.
 
-<img src="Photos/hn_demo.png" alt="heuristic" style="width: 80%;">
+<img src="Photos/hn_demo.png" alt="heuristic" style="width: 90%;">
 
 - *Specific heuristc values*: We have done a lot of experiments to improve the performance of the agent. The initial values we used and the performance are shown blow in chart.
 
