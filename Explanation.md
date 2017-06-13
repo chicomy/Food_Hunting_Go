@@ -38,10 +38,9 @@ DFS is using depth-first search to traverse the map. Here is a list of 10 attemp
 [42, 14, 68, 67, 16, 69, 82, 55, 70, 42, 69]
 The maximum step is 82 and the minimum is 14. The average is 54.0 with a standard deviation of 21.71. SD is reduced a lot and average is 1/3 of the random agent. 
 
-
 A* (Ours)
-We implement A* search with our ranking system to create 
+We implement A* search with our ranking system to dynamically decide which direction to take. 
 [12, 14, 6, 14, 24, 22, 26, 22, 20, 19]
-Max = 26  Min = 6 AVG = 17.9	SD = 5.90677577025
-
+The maximum step is 26 and the minimum is 6. The average is 17.9 with a standard deviation of 5.906. 
+SD and average is further reduced to a decent number. 
 </p>
