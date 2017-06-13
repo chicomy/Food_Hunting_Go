@@ -1,65 +1,56 @@
-<p>
-<h1> Description </h1>
 Our agent is designed to learn about corresponding relationship between terrain blocks and objects on it, and it will apply what it has learnt in a more complex map to find objects it is asked for. It is like an auto-robot for searching required objects in places that human cannot reach, such as deep forest or seafloor. It will optimize its path while it is searching. 
 On the right side is a training map, which is divided into four pieces with objects on it. Most objects are bind onto a certain type of block, but there are outliers just to confuse our agent. Expect some unexpected. 
 Our agent traverses the training map via depth-first algorithm. It will learn that pumpkins are on sandstone; eggs are on diamond, and so on. 
-</p>
+Map:
+As you can see, there are blocks 
+After that, our agent is put at the right corner on the test map, which is a 27 by 27 concluding 81 groups of different blocks, and not every block has its assigned objects. Obsidian and apple are considered outliers here. The agent is using A-start search to evaluate four steps ahead of its current location, and return a potentially best direction. The agent ranks those blocks on various standards, including the worthy status of this block (visited, unvisited but not valuable, and valuable) and the path of this block (how many steps have to be made to move to this block). The challenge part is that the priority changes as every step it takes and items it finds. 
 
-<p>
-<h2>Training Map:</h2>
-Here we use the recipe for pumpkin pie as an example. To craft a pumpkin pie, we need egg, sugar, and a pumpkin. On the training map, eggs are created on Diamond_block, apples on grass, sugar on glass, and pumpkins on sandstone. However, there are cookies and cooked fish as outliers on random position on the map. Out agent will traverse the training map to learn about this policy. As it learns, it will know to find apples on grass first and so as other relationships. It will bring what it has learnt to the test map. 
-Relative relationship: 
-"egg" on "diamond_block" 
-"apple" on "grass"
-"sugar" on "glass"
-"pumpkin" on "sandstone"
-"apple" on "obsidian"
+Part 2: Searching algorithm
+1. Graph construction
+We first construct a graph representation from the test map mentioned above. The graph representation is like this
 
-<img src="docs/Photos/training_map.png" alt="Training map" style="width: 45%;" >
-</p>
+<img src="docs/Photos/graphdata.png" alt="graph_repre" style="width: 45%;">
 
-<p>
-<h2>Test Map</h2>
-After that, our agent is put at the right corner on a randomly generated test map, which is a 27 by 27 map concluding 81 groups of different blocks, and not every block has its assigned objects. Obsidian and apple are considered outliers here. 
-The agent is using A-star search to evaluate four steps ahead of its current location, and return a potentially best direction. The agent ranks those blocks on various standards, including the worthy status of this block (visited, unvisited but not valuable, and potentially valuable) and the path of this block (how many steps have to be made to move to this block). The challenging part is that the priority changes as every step it takes and items it finds. For example, if we are looking for pumpkin, we will look for sandstones. All sandstones are potentially valuable to us untill one pumpkin is found, and then all sandstone are treated as unvisited but not valuable blocks, which means lower rank. All blocks are important to us in the first place, but they get less valuable as the agent travels. However, the visited blocks are not forbidden because there are chances that the agent has to pass through it to get to another potentially valuable block. Therefore, we give different scores to those situation carefully. In addition to that, visted blocks tend to be less and less possible to take. 
-<img src="docs/Photos/test_map.png" >
-</p>
+<img src="docs/Photos/node_sampe.png" alt="example" style="width: 45%;">
 
+2. A-star heuristic search algorithm
+the formular of A-star search is this: 
+### F(n) = G(n) + H(n) ###
+  - *For G(n)*: Since every block placed next to each other, so the edge weight is just 1, which means that G(n) is als 1 for each depth
+  - *For H(n)*: We decided to use 3-depth heuristic cost evaluation: for each of the four possible direction our agent can make, it evaluates states in 3 steps. For each of these states, we evaluate four aspects:
+  - whether the state has item that we are looking for
+  - whether the state has item that we already found
+  - whether the state has been visited
 
-<p>
-<h2>Raw Data</h2>
-We also write agents via different algorithm in order to compare with ours. 
-Here is table. 
-<img src="docs/Photos/table.png" >
+Also, in order to prevent agent from falling down the sky, we give H(n) = 1000 when it find a near by node state to be 0 (i.e. "air") at depth 1. What's more, for the nodes that next to current node, we give then 2 times heuristic value since they are more important for agent to consider. Now we calculate each state's G(n) and H(n) value, and add them up, which is the F(n) of one direction. Then we find the direction with the lowest F(n) value, and go towards that direction. The image below is a detailed illustration.
+<img src="docs/Photos/hn_demo.png" alt="heuristic" style="width: 45%;">
 
-<h3>Random</h2>
-<p>
-First is a random	agent that takes directions randomly. Here is a list of 10 attemps that the agent finishes finding all three objects.
-</p>
-<p>
+- *Specific heuristc values*: We have done a lot of experiments to improve the performance of the agent. The initial values we used and the performance are shown blow in chart.
+<img src="docs/Photos/h1.png" alt="h1" style="width: 45%;">
+
+Along the process of heavily experimenting, we found that the agent has several things can be improved:
+1. Add more cost for blocks that already visited: (Times of visit) times (heuristic value for visited)
+  - solved dead loop
+2. Add heuristic cost to "air" block at depth 2 and 3
+  - improved the performace that the agent tends to search towards the boundary
+3. Add more rewards (negative cost) to nodes that might have items on it
+  - made the agent more "greedy"
+4. Increased G(n) at depth 2 and 3
+  - made the near by node lower F(n)
+  
+After a great amount of testing, we ended up with values like this:
+<img src="docs/Photos/h2.png" alt="h2" style="width: 45%;">
+
+Even though the algorithm is not perfect, guarenteed optimal solution, but we are satisfied with this performance considering agents limited sight. Ellaborate more in evaluations
+Random	
 [521, 61, 146, 38, 36, 439, 143, 240, 29, 93]
-</p>
-<p>
-The maximum step is 521 and the minimum is 29. The average is 174.6 with a standard deviation of 165.72. SD is very large because this totally depends on luck. 
-</p>
-<p>
-<h3>DFS</h3>
-DFS is using depth-first search to traverse the map. Here is a list of 10 attemps that the agent finishes finding all three objects. 
-</p>
-<p>
+Max = 521 	Min = 29 	AVG = 174.6	SD = 165.718556595
+
+DFS
 [42, 14, 68, 67, 16, 69, 82, 55, 70, 42, 69]
-</p>
-<p>
-The maximum step is 82 and the minimum is 14. The average is 54.0 with a standard deviation of 21.71. SD is reduced a lot and average is 1/3 of the random agent. 
-</p>
-<p>
-<h3>A* (Ours)</h3>
-We implement A* search with our ranking system to dynamically decide which direction to take. 
-</p>
-<p>
+Max = 82		Min = 14		AVG = 54.0	SD = 21.7171905097
+
+A* method
 [12, 14, 6, 14, 24, 22, 26, 22, 20, 19]
-</p>
-<p>
-The maximum step is 26 and the minimum is 6. The average is 17.9 with a standard deviation of 5.906. 
-SD and average is further reduced to a decent number. 
-</p>
+Max = 26 	Min = 6		AVG = 17.9	SD = 5.90677577025
+
