@@ -35,6 +35,8 @@ Here is table.
 <h3>Random</h2>
 <p>
 First is a random	agent that takes directions randomly. Here is a list of 10 attemps that the agent finishes finding all three objects.
+</p>
+<p>
 [521, 61, 146, 38, 36, 439, 143, 240, 29, 93]
 </p>
 <p>
@@ -43,6 +45,8 @@ The maximum step is 521 and the minimum is 29. The average is 174.6 with a stand
 <p>
 <h3>DFS</h3>
 DFS is using depth-first search to traverse the map. Here is a list of 10 attemps that the agent finishes finding all three objects. 
+</p>
+<p>
 [42, 14, 68, 67, 16, 69, 82, 55, 70, 42, 69]
 </p>
 <p>
@@ -51,6 +55,8 @@ The maximum step is 82 and the minimum is 14. The average is 54.0 with a standar
 <p>
 <h3>A* (Ours)</h3>
 We implement A* search with our ranking system to dynamically decide which direction to take. 
+</p>
+<p>
 [12, 14, 6, 14, 24, 22, 26, 22, 20, 19]
 </p>
 <p>
