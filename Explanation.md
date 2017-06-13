@@ -29,6 +29,9 @@ The agent is using A-star search to evaluate four steps ahead of its current loc
 <p>
 <h2>Raw Data</h2>
 We also write agents via different algorithm in order to compare with ours. 
+Here is table. 
+<img src="docs/Photos/table.png" >
+
 <h3>Random</h2>
 <p>
 First is a random	agent that takes directions randomly. Here is a list of 10 attemps that the agent finishes finding all three objects.
