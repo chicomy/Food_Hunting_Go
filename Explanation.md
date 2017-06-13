@@ -15,6 +15,7 @@ The agent is using A-star search to evaluate four steps ahead of its current loc
 </p>
  [("egg", "diamond_block"), ("apple", "grass"), ("sugar", "glass"), ("pumpkin", "sandstone"), ("apple", "obsidian")]
 
+<p>
 Random	
 [521, 61, 146, 38, 36, 439, 143, 240, 29, 93]
 Max = 521 Min = 29  AVG = 174.6	SD = 165.718556595
@@ -23,7 +24,8 @@ DFS
 [42, 14, 68, 67, 16, 69, 82, 55, 70, 42, 69]
 Max = 82  Min = 14  AVG = 54.0	SD = 21.7171905097
 
-A* method
+A* (Our)
 [12, 14, 6, 14, 24, 22, 26, 22, 20, 19]
 Max = 26  Min = 6 AVG = 17.9	SD = 5.90677577025
 
+</p>
