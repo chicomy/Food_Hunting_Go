@@ -14,7 +14,7 @@ On the right side is a training map, which is divided into four pieces with obje
 Our agent traverses the training map via depth-first algorithm. It will learn that pumpkins are on sandstone; eggs are on diamond, and so on. 
 </p>
 
-<h2>Approaches</h2>
+## Approaches
 
 <p>
 <h4>Training Map:</h4>
@@ -36,7 +36,9 @@ The agent is using A-star search to evaluate four steps ahead of its current loc
 <img src="Photos/test_map.png" >
 </p>
 
-<h2>Evaluation</h2>
+
+## Evaluation
+
 <p>
 <h4>Raw Data</h4>
 We also write agents via different algorithm in order to compare with ours. 
@@ -75,6 +77,5 @@ The maximum step is 26 and the minimum is 6. The average is 17.9 with a standard
 SD and average is further reduced to a decent number. 
 </p>
 
-
-<h1>References</h1>
+## References
 
