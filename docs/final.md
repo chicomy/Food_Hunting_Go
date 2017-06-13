@@ -26,14 +26,14 @@ Relative relationship:
 "pumpkin" on "sandstone"
 "apple" on "obsidian"
 
-<img src="docs/Photos/training_map.png" alt="Training map" style="width: 45%;" >
+<img src="Photos/training_map.png" alt="Training map" style="width: 45%;" >
 </p>
 
 <p>
 <h3>Test Map</h3>
 After that, our agent is put at the right corner on a randomly generated test map, which is a 27 by 27 map concluding 81 groups of different blocks, and not every block has its assigned objects. Obsidian and apple are considered outliers here. 
 The agent is using A-star search to evaluate four steps ahead of its current location, and return a potentially best direction. The agent ranks those blocks on various standards, including the worthy status of this block (visited, unvisited but not valuable, and potentially valuable) and the path of this block (how many steps have to be made to move to this block). The challenging part is that the priority changes as every step it takes and items it finds. For example, if we are looking for pumpkin, we will look for sandstones. All sandstones are potentially valuable to us untill one pumpkin is found, and then all sandstone are treated as unvisited but not valuable blocks, which means lower rank. All blocks are important to us in the first place, but they get less valuable as the agent travels. However, the visited blocks are not forbidden because there are chances that the agent has to pass through it to get to another potentially valuable block. Therefore, we give different scores to those situation carefully. In addition to that, visted blocks tend to be less and less possible to take. 
-<img src="docs/Photos/test_map.png" >
+<img src="Photos/test_map.png" >
 </p>
 
 
@@ -44,7 +44,7 @@ The agent is using A-star search to evaluate four steps ahead of its current loc
 <h4>Raw Data</h4>
 We also write agents via different algorithm in order to compare with ours. 
 Here is table. 
-<img src="docs/Photos/table.png" >
+<img src="Photos/table.png" >
 
 <h4>Random</h4>
 <p>
