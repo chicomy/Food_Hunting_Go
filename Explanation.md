@@ -5,17 +5,18 @@ On the right side is a training map, which is divided into four pieces with obje
 Our agent traverses the training map via depth-first algorithm. It will learn that pumpkins are on sandstone; eggs are on diamond, and so on. 
 </p>
 <p>
-<h1>Training Map:</h1>
+<h2>Training Map:</h2>
 Here we use the recipe for pumpkin pie as an example. To craft a pumpkin pie, we need egg, sugar, and a pumpkin. On the training map, eggs are created on Diamond_block, apples on grass, sugar on glass, and pumpkins on sandstone. However, there are cookies and cooked fish as outliers on random position on the map. Out agent will traverse the training map to learn about this policy. As it learns, it will know to find apples on grass first and other relationships. 
 </p>
 <p>
-<h1>Test Map</h1>
+<h2>Test Map</h2>
 After that, our agent is put at the right corner on a randomly generated test map, which is a 27*27 map concluding 81 groups of different blocks, and not every block has its assigned objects. Obsidian and apple are considered outliers here. 
 The agent is using A-star search to evaluate four steps ahead of its current location, and return a potentially best direction. The agent ranks those blocks on various standards, including the worthy status of this block (visited, unvisited but not valuable, and potentially valuable) and the path of this block (how many steps have to be made to move to this block). The challenge part is that the priority changes as every step it takes and items it finds.  
 </p>
  [("egg", "diamond_block"), ("apple", "grass"), ("sugar", "glass"), ("pumpkin", "sandstone"), ("apple", "obsidian")]
 
 <p>
+<h2>Raw Data</h2>
 Random	
 [521, 61, 146, 38, 36, 439, 143, 240, 29, 93]
 Max = 521 Min = 29  AVG = 174.6	SD = 165.718556595
